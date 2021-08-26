@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2</title>
+    <title>Bhaskara</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
     <body>
-        <nav class="navbar navbar-light bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Ejercicio 2</span>
+              <span class="navbar-brand mb-0 h1">Bhaskara</span>
             </div>
-        </nav>
-        <script src="index.js"></script>
+          </nav>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-4">     
+                    <div class="mb-3">
+                        <label class="form-label text-primary">A</label>
+                        <input id="inp_a" class="form-control rounded-pill bg-secondary text-light" type="number" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-primary">B</label>
+                        <input id="inp_b" class="form-control rounded-pill bg-secondary text-light" type="number" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-primary">C</label>
+                        <input id="inp_c" class="form-control rounded-pill bg-secondary text-light" type="number" placeholder="">
+                    </div>
+                    <button id="btn_calcular" class="btn btn-outline-dark rounded-pill">Calcular raìces</button>
+                </div>
+                <div class="col-8">
+                    <h3 id="r1"></h3>
+                    <h3 id="r2"></h3>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
     </body>
 </html>
