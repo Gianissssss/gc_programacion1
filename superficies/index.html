@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO-Ejercicico 2</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1">POO-ejercicio 2</a>
+        </div>
+      </nav>
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col-6">     
+                <h3>AREA TRAPECIO</h3>
+                <div class="mb-3">
+                    <label class="form-label text-primary">Base superior</label>
+                    <input id="inp_bs" class="form-control  bg-light text-dark" type="number" placeholder="Ingrese base superior">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-primary">Base inferior</label>
+                    <input id="inp_bi" class="form-control  bg-light text-dark" type="number" placeholder="Ingrese base inferior">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-primary">Altura</label>
+                    <input id="inp_a" class="form-control bg-light text-dark" type="number" placeholder="Ingrese altura">
+                </div>
+                <button id="btn_calcular" class="btn btn-outline-dark rounded-pill">Calcular </button>
+                <h3 id="h_resultado1"></h3>
+            </div>
+            <div class="col-6">
+                <h3>AREA TRIANGULO</h3>
+                <div class="mb-3">
+                    <label class="form-label text-primary">Base </label>
+                    <input id="inp_b" class="form-control  bg-light text-dark" type="number" placeholder="Ingrese base">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-primary">Altura</label>
+                    <input id="inp_alt" class="form-control  bg-light text-dark" type="number" placeholder="Ingrese altura">
+                </div>
+                <button id="btn_calcular2" class="btn btn-outline-dark rounded-pill">Calcular</button>
+                <h3 id="h_resultado2"></h3>
+            </div>
+            </div>
+        </div>
+        <script src="main.js" type="module"></script>
+    </div>
+</body>
+</html>
