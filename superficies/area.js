@@ -17,7 +17,7 @@ export default class Area{
         return resultado;
     }
     calcularBaseTrian (){
-        const resultado2=this.base*this.altura2/2;
+        const resultado2=parseInt(this.base)*parseInt(this.altura2)/2;
         return resultado2;
     }
 } 
