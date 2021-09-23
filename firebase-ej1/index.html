@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -14,19 +15,39 @@
         </div>
     </nav>
     <div class="container mt-3">
-    <div class="form-floating mb-3">
-        <input id="inp_nom" type="text" class="form-control" placeholder="name">
-        <label for="floatingInput"><em>Ingrese nombre</em></label>
-    </div>
-    <div class="form-floating mb-3">
-        <input id="inp_ape" type="text" class="form-control" placeholder="name">
-        <label for="floatingInput"><em>Ingrese apellido</em></label>
-    </div>
-    <div class="form-floating mb-3">
-        <input id="inp_dni" type="text" class="form-control" placeholder="name">
-        <label for="floatingInput"><em>Ingrese dni</em></label>
-    </div>
-    <button id="btn_obtener" class="btn btn-outline-dark">Obtener datos</button>
+        <div class="row">
+            <div class="col-4">
+            <div class="form-floating mb-3">
+                <input id="inp_nom" type="text" class="form-control" placeholder="name">
+                <label for="floatingInput"><em>Ingrese nombre</em></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input id="inp_ape" type="text" class="form-control" placeholder="name">
+                <label for="floatingInput"><em>Ingrese apellido</em></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input id="inp_dni" type="text" class="form-control" placeholder="name">
+                <label for="floatingInput"><em>Ingrese dni</em></label>
+            </div>
+            <button id="btn_obtener" class="btn btn-outline-dark">Guardar</button>
+            </div>
+            <div class="col-8">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Dni</th>
+                            <th scope="col">Accion</th>
+                          </tr>
+                    </thead> 
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
