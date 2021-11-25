@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div v-for="producto of listar_productos" v-bind:key="producto.id" class="col-3 me-1">
-            <div class="card" >
+            <div class="card text-white bg-warning border-light mb-3" >
              <img :src="producto.url" class="card-img-top" alt="...">
              <div class="card-body">
                  <h5 class="card-title">{{producto.descripcion}}</h5>
